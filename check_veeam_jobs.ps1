@@ -17,7 +17,7 @@ if($excluded_jobs -ne ""){
 }
 
 # Import Powershell moudle 
-if (Get-Module -Name Veeam*){
+if((Get-Module -Name Veeam*)){
     Get-Module -Name Veeam* | Import-Module -DisableNameChecking
 }
 else{
